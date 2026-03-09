@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sathvik Manda | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0f172a;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+box-sizing:border-box;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+z-index:10;
+}
+
+nav div{
+display:flex;
+gap:25px;
+margin-right:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:flex-start;
+padding-left:120px;
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+gap:60px;
+}
+
+.hero-image img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #38bdf8;
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.hero-text{
+text-align:left;
+}
+
+.hero-text h1{
+font-size:60px;
+margin:0;
+background:linear-gradient(90deg,#38bdf8,#a78bfa);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-text p{
+font-size:20px;
+color:#cbd5f5;
+}
+
+.section{
+padding:120px 10%;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:40px;
+border-radius:15px;
+transition:0.3s;
+display:flex;
+align-items:center;
+gap:15px;
+font-size:22px;
+justify-content:center;
+}
+
+.card i{
+font-size:32px;
+color:#38bdf8;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0px 20px 40px rgba(144,23,23,0.77);
+}
+
+/* PROJECTS */
+
+.projects-container{
+display:flex;
+/* justify-content:center; */
+margin-left:0px;
+}
+
+.project{
+width:600px;
+background:#1e293b;
+padding:40px;
+border-radius:15px;
+margin-left:0px;
+}
+
+.github-btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+transition:0.3s;
+}
+
+.github-btn:hover{
+background:#0ea5e9;
+transform:scale(1.05);
+}
+
+.contact{
+text-align:center;
+}
+
+.contact i{
+margin-right:8px;
+color:#38bdf8;
+}
+
+.footer{
+text-align:center;
+padding:30px;
+color:#94a3b8;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+.contact-link{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.contact-link:hover{
+color:#38bdf8;
+}
+.achieve-btn{
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.achieve-btn:hover{
+background:#0ea5e9;
+transform:scale(1.05);
+}
+
+.achievement-box{
+display:none;
+margin-top:40px;
+text-align:center;
+}
+
+.achievement-box img{
+width:600px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.7);
+}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<nav>
+
+<h2>Sathvik</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div class="hero-image">
+<img src="./IMG20251122110807(1) - Copy.jpg" alt="Sathvik">
+</div>
+
+<div class="hero-text">
+<h1>Sathvik Manda</h1>
+<p>B.Tech Student | Aspiring Software Developer</p>
+<p>Python • JavaScript • Web Development</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="section">
+
+<h2>About Me</h2>
+
+<p>
+I am a B.Tech 3rd year student with a strong interest in software development<br> and problem solving. 
+I enjoy learning new technologies and building practical <br>projects that solve real-world problems. 
+My main areas of interest include web <br>development, machine learning, and data-driven applications.
+</p>
+
+</section>
+
+<section id="skills" class="section">
+
+<h2>Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-brands fa-html5"></i> HTML
+</div>
+
+<div class="card">
+<i class="fa-brands fa-css3-alt"></i> CSS
+</div>
+
+<div class="card">
+<i class="fa-brands fa-js"></i> JavaScript
+</div>
+
+<div class="card">
+<i class="fa-brands fa-python"></i> Python
+</div>
+
+<div class="card">
+<i class="fa-solid fa-database"></i> SQL
+</div>
+
+</div>
+
+</section>
+
+
+<section id="projects" class="section">
+
+<h2>Projects</h2>
+
+<div class="projects-container">
+
+<div class="project">
+
+<h3>Plant Disease Detection using Machine Learning</h3>
+
+<p>
+Developed a machine learning based system that detects plant diseases using image analysis.
+The model helps farmers identify plant health issues early and improve crop productivity.
+</p>
+
+<a href="https://github.com/Sathwik-05/plant-disease-detection" target="_blank" class="github-btn">
+<i class="fa-brands fa-github"></i> View on GitHub
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section id="achievements" class="section">
+
+<h2>Achievements</h2>
+
+<button class="achieve-btn" onclick="showAchievement()">
+🏆 View Hackathon Certificate
+</button>
+
+<div id="achievement-box" class="achievement-box">
+
+<img src="./VHACK_Participation_Certificate_Manda_Sathvik.png" alt="Hackathon Certificate">
+
+<p>Participated in a Hackathon and developed innovative solutions with my team.</p>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="section contact">
+
+<h2>Contact</h2>
+
+<p>
+<i class="fa-solid fa-envelope"></i> 
+<a href="mailto:sathwikamanda5@gmail.com" class="contact-link">
+sathwikamanda5@gmail.com
+</a>
+</p>
+<p><i class="fa-solid fa-phone"></i> 9949710704</p>
+<p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+
+</section>
+
+<div class="footer">
+© 2026 Sathvik Manda | Portfolio
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+<script>
+
+const scene=new THREE.Scene();
+
+const camera=new THREE.PerspectiveCamera(
+75,
+window.innerWidth/window.innerHeight,
+0.1,
+1000
+);
+
+const renderer=new THREE.WebGLRenderer({
+canvas:document.getElementById('bg')
+});
+
+renderer.setSize(window.innerWidth,window.innerHeight);
+
+const geometry=new THREE.TorusGeometry(10,3,16,100);
+
+const material=new THREE.MeshBasicMaterial({
+color:0x38bdf8,
+wireframe:true
+});
+
+const torus=new THREE.Mesh(geometry,material);
+
+scene.add(torus);
+
+torus.position.x = 15;
+
+const starGeometry=new THREE.BufferGeometry();
+
+const starCount=2000;
+
+const positions=new Float32Array(starCount*3);
+
+for(let i=0;i<starCount*3;i++){
+positions[i]=(Math.random()-0.5)*600;
+}
+
+starGeometry.setAttribute(
+'position',
+new THREE.BufferAttribute(positions,3)
+);
+
+const starMaterial=new THREE.PointsMaterial({
+color:0xffffff,
+size:1
+});
+
+const stars=new THREE.Points(
+starGeometry,
+starMaterial
+);
+
+scene.add(stars);
+
+camera.position.z=30;
+
+function animate(){
+
+requestAnimationFrame(animate);
+
+torus.rotation.x+=0.01;
+torus.rotation.y+=0.005;
+torus.rotation.z+=0.01;
+
+stars.rotation.y+=0.0005;
+
+renderer.render(scene,camera);
+
+}
+
+animate();
+
+window.addEventListener('resize',()=>{
+
+camera.aspect=window.innerWidth/window.innerHeight;
+camera.updateProjectionMatrix();
+renderer.setSize(window.innerWidth,window.innerHeight);
+
+});
+
+function showAchievement(){
+document.getElementById("achievement-box").style.display="block";
+}
+
+
+</script>
+
+</body>
+</html>
